@@ -1,0 +1,18 @@
+<%= stylesheet 'bootstrap' %>
+<%= javascript 'bootstrap' %>
+
+  <div class="text-center">
+    <h1>Conhecidos</h1>
+  <% images.each do |image| %>
+    <% if image.strange? %>
+      <img src="data:image/jpeg;base64, <%= image.imagem %>" height="250" width="250" class="rounded">
+    <% end %>
+  <% end %>
+
+ <h1>Desconhecidos</h1>
+  <% images.each do |image| %>
+    <% unless image.strange? %>
+      <img src="data:image/jpeg;base64, <%= image.imagem %>" height="250" width="250" class="rounded">
+    <% end %>
+  <% end %>
+</div>

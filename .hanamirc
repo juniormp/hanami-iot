@@ -1,0 +1,4 @@
+project=iot
+architecture=container
+test=minitest
+template=erb
