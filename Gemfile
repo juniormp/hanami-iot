@@ -6,6 +6,7 @@ gem 'hanami-model', '~> 1.0.0.beta2'
 gem 'jsonapi-hanami'
 gem 'rest-client'
 gem 'hanami-bootstrap'
+gem 'ruby', '2.4.0'
 
 
 group :development do
