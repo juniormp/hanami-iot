@@ -7,7 +7,6 @@ gem 'jsonapi-hanami'
 gem 'rest-client'
 gem 'hanami-bootstrap'
 
-gem 'sqlite3'
 
 group :development do
   # Code reloading
