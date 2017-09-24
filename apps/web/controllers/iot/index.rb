@@ -15,7 +15,7 @@ module Web::Controllers::Iot
 
     private 
 
-    def retrieve_images(url: ENV['URL'])
+    def retrieve_images(url: "https://face-recognition.mybluemix.net/imagens") 
       response = RestClient.get(url)
       JSON.parse(response)
     end
